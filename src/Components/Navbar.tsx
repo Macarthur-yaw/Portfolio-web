@@ -24,7 +24,7 @@ export default function Navbar(){
 <span className={`${active ? 'block':'hidden'} hidden md:block`}>
     <ul className="flex flex-row gap-4 p-2 ">
         <li className="text-white hover:text-gray-400 text-[16px]">
-            {active && console.log('clicked')}
+            {/* {active && console.log('clicked')} */}
             <span className='text-[#C778DD]'>
             #
             </span>
