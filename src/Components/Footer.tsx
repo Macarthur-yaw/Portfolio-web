@@ -1,24 +1,22 @@
 import Discord from '../assets/Discord.png'
 import Figma from '../assets/Figma.png'
 import Github from '../assets/Vector.png'
-import Mticon from '../assets/Union.png'
+// import Mticon from '../assets/Union.png'
 const Footer = () => {
-    return (<div className='p-2 border-t-[1px] flex flex-row justify-between'>
-        <span>
-            <h1 className='flex flex-row text-white'>
-    <img src={Mticon}/>        &nbsp;    Kevin
+    return (<div className='p-2 mt-10 md:border-t-[1px] md:flex md:flex-row md:justify-between'>
+        <span className='text-center '>
+            <h1 className='  text-white '>
+            &copy;  MacArthur Kevin
             </h1>
-            <h3 className='text-gray-200'>
-                Web designer and Front end developer
-            </h3>
+           
         </span>
 
         <span>
-<div className='text-white text-[24px]'>
+<div className='text-white text-[24px] hidden md:block'>
     Media
 </div>
 
-<div className='flex flex-row gap-4'>
+<div className='md:flex md:flex-row md:gap-4 hidden '>
 <img src={Discord}/>
 <img src={Github}/>
 <img src={Figma}/>

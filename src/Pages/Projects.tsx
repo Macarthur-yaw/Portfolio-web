@@ -1,11 +1,12 @@
 import { projectDetails } from "../Constant/Project";
 import liveIcon from '../assets/Live _~_ (1).png'
 import lineIcon from '../assets/Line 7 (Stroke).svg'
+import EastIcon from '@mui/icons-material/East';
 const Project = () => {
     return ( 
         <div>
-            <span className="flex flex-row justify-between mt-10 p-6 items-center">
-                <h1 className="inline-flex gap-2 items-center text-white font-medium text-[32px]">
+            <span className="flex flex-row justify-between md:mt-10 p-6 items-center">
+                <h1 className="inline-flex gap-2 items-center text-white font-medium text-[22px] md:text-[32px]">
                     <span className="text-[#C778DD]">
                         #
                     </span>
@@ -16,8 +17,8 @@ const Project = () => {
 <span>
 
 </span>
-                <h2 className="text-gray-200">
-                    View all 
+                <h2 className="text-gray-200 inline-flex items-center gap-1">
+                    View all  <EastIcon/>
                 </h2>
             </span>
 
