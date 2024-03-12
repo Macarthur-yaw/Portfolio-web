@@ -6,7 +6,6 @@ import lineStroke from '../assets/Line 10 (Stroke).svg'
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
-// import { duration } from '@mui/material'
 export default function Navbar(){
     const[active,setActive]=useState<boolean>(false)
     
@@ -15,41 +14,45 @@ export default function Navbar(){
     }
     return (
         <div>
-        <nav className="flex md:w-[80%] px-4 w-[100%] top-0   left-1/2 transform -translate-x-1/2 z-20 fixed 
-        
-        flex-row  justify-between  md:px-4 py-2 ">
+        <nav className={`flex md:w-[80%] px-4 w-full top-0   left-1/2 transform -translate-x-1/2 
+        z-20 bg-[#282C33] fixed ${active  && '    flex flex-row '}
+        flex-row  justify-between  md:px-4 py-2 `}>
 <span className="text-white inline-flex items-center gap-2">
 <img src={Mticon} className='w-[16px] h-[16px]'/>    MacArthur
 </span>
-<span className='p-4 md:hidden'>
+<motion.div 
+initial={{opacity:0}}
+animate={{opacity:1}}
+transition={{duration:0.5}}
+className='p-2  ml-auto m md:hidden'>
 
 
 {
-    !active ? <DehazeIcon onClick={handleButtonClick} className='text-white cursor-pointer ' />
-:  <CloseIcon
+    active ? <CloseIcon
 onClick={
     ()=>setActive(false)
 }
-className='cursor-pointer text-white  '/>
+className='cursor-pointer text-white mr-auto '/>
+:<DehazeIcon onClick={handleButtonClick} className='text-white cursor-pointer ' />  
 
 }
-</span>
-
+</motion.div>
+<AnimatePresence>
+  
 {
     active && (
-        <AnimatePresence>
         <div
         >
       {/* <span className='relative'> */}
       
       {/* </span> */}
              <motion.ul
-             initial={{x:150}}
-             animate={{x:0}}
-             exit={{x:150}}
-             transition={{duration:0.5}}
+             initial={{y:-50}}
+             animate={{y:0}}
+             exit={{y:-550}}
+             transition={{duration:0.3}}
              
-             className='list-none flex mt-20 py-10 items-center bg-white h-screen fixed  w-full left-0 top- flex-col  gap-10'>
+             className='list-none text-white flex mt-10 py-10 z-2 fixed items-center bg-[#282C33] h-screen  w-full    left-0 top-0  flex-col  gap-10'>
                 <li>
 Home
                 </li>
@@ -65,9 +68,9 @@ Home
    
              </motion.ul>
         </div>
-        </AnimatePresence>
     )
-}
+}      </AnimatePresence>
+  
 <span className={`${active ? 'block':'hidden'} hidden md:block`}>
     <ul className="flex flex-row gap-4 p-2 ">
         <li className="text-white hover:text-gray-400 text-[16px]">
