@@ -51,7 +51,7 @@ const Project = () => {
                                        <h3 className="text-gray-500  text-[12px] md:text-[16px]">
                                         {content.content}
                                        </h3>
-                                       <button className="border-[1px] w-[40%] text-[12px] inline-flex items-center gap-2 justify-center border-[#C778DD] p-2 md:w-[30%] text-white ml-1 mb-1">Live <img src={liveIcon} alt="live icon" className=' '/>
+                                       <button className="border-[1px] w-[60%] text-[12px] inline-flex items-center gap-2 justify-center border-[#C778DD] p-2 md:w-[30%] text-white ml-1 mb-1">Live <img src={liveIcon} alt="live icon" className=' '/>
                                         </button>
                                     </div>
                                     </div>

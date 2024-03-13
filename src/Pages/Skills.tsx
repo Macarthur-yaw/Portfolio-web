@@ -3,12 +3,14 @@ import sideSkills from '../assets/Group 36.png'
 const Skills = () => {
     return (  
         <div className=' mt-20'>
-<span className='text-white pt-10 text-[22px] md:text-[32px] pl-4'>
-#<span>
-Skills
-</span>
-</span>
-            <section className='flex md:flex-row flex-col justify-center gap-2 md:mt-20'> 
+
+<h1 className="inline-flex px-4 font-medium gap-2 items-center text-white  text-[22px] md:text-[32px]">
+                   <span className="text-[#C778DD]">
+                        #
+                    </span>skills
+                    {' '}
+                </h1>
+                           <section className='flex md:flex-row flex-col justify-center gap-2 md:mt-20'> 
            <div>
             <img src={sideSkills} alt='side pics' className='hidden'/>
             </div>

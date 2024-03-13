@@ -50,7 +50,7 @@ className='cursor-pointer text-white mr-auto '/>
              <motion.ul
              
              className='list-none  text-[#ABB2BF] font-medium flex mt-10 py-10 z-2 fixed items-start px-6 bg-[#282C33] h-screen  w-full    left-0 top-0  flex-col  gap-10 justify-between'>
-    <span className='flex flex-col gap-6'>
+    <span className='flex flex-col gap-2'>
         <li className="text-[#ABB2BF] hover:text-gray-400 text-[40px]">
             {/* {active && console.log('clicked')} */}
             <span className='text-[#C778DD]'>
