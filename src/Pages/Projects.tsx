@@ -44,16 +44,16 @@ const Project = () => {
                                         {content.technologies}
                                     </h1>
 
-                                    <span className="px-4">
-                                       <h1 className="text-white p-1 text-[14px] md:text-[22px]"> {content.title}
+                                    <div className='p-1 flex flex-col gap-1'>
+                                       <h1 className="text-white  text-[14px] md:text-[22px]"> {content.title}
                                        </h1>
 
-                                       <h3 className="text-gray-500 p-1 text-[12px] md:text-[16px]">
+                                       <h3 className="text-gray-500  text-[12px] md:text-[16px]">
                                         {content.content}
                                        </h3>
-                                       <button className="border-[1px] text-[12px] inline-flex items-center gap-2 justify-center border-[#C778DD] p-2 md:w-[30%] text-white ml-1 mb-1">Live <img src={liveIcon} alt="live icon" className=' '/>
+                                       <button className="border-[1px] w-[40%] text-[12px] inline-flex items-center gap-2 justify-center border-[#C778DD] p-2 md:w-[30%] text-white ml-1 mb-1">Live <img src={liveIcon} alt="live icon" className=' '/>
                                         </button>
-                                    </span>
+                                    </div>
                                     </div>
                             </div>
                         )
