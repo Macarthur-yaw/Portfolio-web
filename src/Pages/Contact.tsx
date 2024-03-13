@@ -3,7 +3,7 @@ const Contacts = () => {
     return ( 
         <div>
             <header>
-                #contact
+                #contacts
             </header>
 <section>
     <div>

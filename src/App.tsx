@@ -4,7 +4,7 @@ import Footer from "./Components/Footer"
 import About from "./Pages/About"
 import Home from "./Pages/Home"
 import Project from "./Pages/Projects"
-import Skills from "./Pages/Skills"
+import Contacts from "./Pages/Contact"
 
 
 
@@ -17,7 +17,7 @@ function App() {
 <Routes>
   <Route index element={<Home/>}/>
 <Route path="/project" element={<Project/>}/>
-<Route path='/skills' element={<Skills/>}/>
+<Route path='/contact' element={<Contacts/>}/>
 <Route path="/About" element={<About/>}/>
 
 </Routes>

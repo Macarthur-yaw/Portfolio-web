@@ -3,10 +3,11 @@ import Discord from '../assets/Discord.png'
 import Github from '../assets/Vector.png'
 import {AnimatePresence, motion} from 'framer-motion'
 import lineStroke from '../assets/Line 10 (Stroke).svg'
-import DehazeIcon from '@mui/icons-material/Dehaze';
+// import DehazeIcon from '@mui/icons-material/Dehaze';
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom'
+import menuIcon from '../assets/menu.svg'
 export default function Navbar(){
     const[active,setActive]=useState<boolean>(false)
     
@@ -34,8 +35,7 @@ onClick={
     ()=>setActive(false)
 }
 className='cursor-pointer text-white mr-auto '/>
-:<DehazeIcon onClick={handleButtonClick} className='text-white cursor-pointer ' />  
-
+: <img src={menuIcon} alt='menu icon' onClick={handleButtonClick} className='text-white cursor-pointer ' />
 }
 </motion.div>
 <AnimatePresence>
@@ -49,7 +49,7 @@ className='cursor-pointer text-white mr-auto '/>
       {/* </span> */}
              <motion.ul
              
-             className='list-none  text-[#ABB2BF] font-medium flex mt-10 py-10 z-2 fixed items-start px-6 bg-[#282C33] h-screen  w-full    left-0 top-0  flex-col  gap-10 justify-between'>
+             className='list-none  text-[#ABB2BF] font-medium flex mt-10 py-10 z-2 fixed items-start px-6 bg-[#282C33] min-h-screen  w-full  md:hidden   left-0 top-0  flex-col  gap-10 justify-between'>
     <span className='flex flex-col gap-2'>
         <li className="text-[#ABB2BF] hover:text-gray-400 text-[40px]">
             {/* {active && console.log('clicked')} */}
