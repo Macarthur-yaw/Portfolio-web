@@ -52,21 +52,38 @@ className='cursor-pointer text-white mr-auto '/>
              exit={{y:-550}}
              transition={{duration:0.3}}
              
-             className='list-none text-white flex mt-10 py-10 z-2 fixed items-center bg-[#282C33] h-screen  w-full    left-0 top-0  flex-col  gap-10'>
-                <li>
-Home
-                </li>
-<li>
-    Works
-</li>
-<li>
-    About
-</li>
-   <li>
-    Contact 
-   </li>
-   
-             </motion.ul>
+             className='list-none  text-[#ABB2BF] font-medium flex mt-10 py-10 z-2 fixed items-start px-6 bg-[#282C33] h-screen  w-full    left-0 top-0  flex-col  gap-10 justify-between'>
+    <span className='flex flex-col gap-12'>
+        <li className="text-[#ABB2BF] hover:text-gray-400 text-[40px]">
+            {/* {active && console.log('clicked')} */}
+            <span className='text-[#C778DD]'>
+            #
+            </span> home
+        </li>
+        
+        <li className="text-[#ABB2BF] hover:text-gray-400 text-[40px]">
+        <span className='text-[#C778DD]'>
+            #
+            </span> works
+        </li>
+        
+        <li className="text-[#ABB2BF] hover:text-gray-400 text-[40px]">
+        <span className='text-[#C778DD]'>
+            #
+            </span> about-me
+        </li>
+        
+        <li className="text-[#ABB2BF] hover:text-gray-400 text-[40px]">
+        <span className='text-[#C778DD]'>
+            #
+            </span> contacts
+        </li>    
+        </span> 
+        <span className='flex flex-row mb-6 items-center gap-4  mx-auto'>
+            <img src={Discord} alt='discord' className='w-[64px] h-[64px]'/>
+            <img src={Github} alt='Githhub' className='w-[64px] h-[64px]'/>
+        </span>
+           </motion.ul>
         </div>
     )
 }      </AnimatePresence>
